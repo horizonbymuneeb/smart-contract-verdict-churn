@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\small
+\caption{Local models: churn against the same model at F16 ($n=175$ paired contracts). Binary flips change the vulnerable/safe verdict; 11-way flips change the stated label. Neg./pos.\ = vulnerable$\to$safe / safe$\to$vulnerable. McNemar $b/c$ = reference correct \& quantized wrong / the reverse; exact two-sided binomial $p$. Intervals are 95\% Wilson. ``Text changed'' counts byte-level differences in the raw output.}\label{tab:local_churn}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrrrrr}\toprule
+ & & \multicolumn{4}{c}{Binary verdict} & \multicolumn{4}{c}{11-way verdict} & & \\\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Model & Quant. & Flips (95\% CI) & Neg./pos. & $b/c$, $p$ & $\Delta$Acc. & Flips & Rate (95\% CI) & McNemar $b/c$ & $p$ & $\Delta$11-way acc. & Text changed\\\midrule
+Qwen2.5-Coder-0.5B & F16 (repeat) & 0 [0.000,0.021] & 0/0 & 0/0, 1.000 & 0.000 & 0 & 0.000 [0.000,0.021] & 0/0 & 1.000 & 0.000 & 0\\
+Qwen2.5-Coder-0.5B & Q8\_0 & 0 [0.000,0.021] & 0/0 & 0/0, 1.000 & 0.000 & 32 & 0.183 [0.133,0.247] & 4/0 & 0.125 & -0.023 & 48\\
+Qwen2.5-Coder-0.5B & Q4\_K\_M & 0 [0.000,0.021] & 0/0 & 0/0, 1.000 & 0.000 & 80 & 0.457 [0.385,0.531] & 14/1 & 0.001 & -0.074 & 137\\
+Llama-3.2-1B & Q8\_0 & 0 [0.000,0.021] & 0/0 & 0/0, 1.000 & 0.000 & 13 & 0.074 [0.044,0.123] & 3/0 & 0.250 & -0.017 & 31\\
+Llama-3.2-1B & Q4\_K\_M & 3 [0.006,0.049] & 3/0 & 3/0, 0.250 & -0.017 & 65 & 0.371 [0.303,0.445] & 3/11 & 0.057 & +0.046 & 92\\
+Qwen3-0.6B & Q8\_0 & 0 [0.000,0.021] & 0/0 & 0/0, 1.000 & 0.000 & 2 & 0.011 [0.003,0.041] & 0/0 & 1.000 & 0.000 & 24\\
+Qwen3-0.6B & Q4\_K\_M & 16 [0.057,0.143] & 16/0 & 15/1, $<$0.001 & -0.080 & 28 & 0.160 [0.113,0.222] & 1/1 & 1.000 & 0.000 & 65\\
+\bottomrule\end{tabular}}\end{table*}

@@ -1,0 +1,9 @@
+6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83  models_tmp/Llama-3.2-1B-Instruct-Q4_K_M.gguf
+432f310a77f4650a88d0fd59ecdd7cebed8d684bafea53cbff0473542964f0c3  models_tmp/Llama-3.2-1B-Instruct-Q8_0.gguf
+1f33ad43d2b85b908ff06fe7002b69806a57359b9b2617ca27d7bdea428ae146  models_tmp/Llama-3.2-1B-Instruct-f16.gguf
+ebfd42b196c529c3b692c549585e62cc6e817b5a5aff8375b3724cdfbafa651a  models_tmp/Qwen3-0.6B-Q4_K_M.gguf
+84c0dbe606526d5907251d88ea88b41457f46ce456e9a333d5d2b6245a95cafe  models_tmp/Qwen3-0.6B-Q8_0.gguf
+ab9004daf660cd6a6ba1c07556e74fcceb2b756063ccce3f9c69d3a637b361cc  models_tmp/Qwen3-0.6B-f16.gguf
+bb69b303c65113199b19c72f9c75bca449200b6cdf807e0f7d8822f669c02e64  models_tmp/qwen2.5-coder-0.5b-instruct-fp16.gguf
+1d9614638d18024d0fbb36575a15f1302a3adf044df10345688ec4f6e1c4ff32  models_tmp/qwen2.5-coder-0.5b-instruct-q4_k_m.gguf
+# verified 2026-10-08T14:30:57Z: the 4 hashes above for Llama Q8_0 and Qwen3 f16/q8_0/q4_k_m re-checked with sha256sum before deletion (match)

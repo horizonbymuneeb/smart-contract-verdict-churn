@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the preprint."
+title: "Same Accuracy, Different Verdicts: Quantization-Induced Verdict Churn in Small LLM Smart-Contract Auditors"
+authors:
+  - family-names: Anjum
+    given-names: Muneeb
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0001-2042-7656"
+version: "v1"
+date-released: "2026-10-08"
+doi: "10.5281/zenodo.23241640"
+license: MIT
+repository-code: "https://github.com/horizonbymuneeb/smart-contract-verdict-churn"
+keywords:
+  - smart contracts
+  - Solidity
+  - vulnerability detection
+  - large language models
+  - quantization
+  - GGUF
+  - prediction churn

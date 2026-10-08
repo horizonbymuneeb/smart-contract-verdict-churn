@@ -1,0 +1,15 @@
+\begin{table*}[t]\centering\small
+\caption{Local models: aggregate metrics on the 175 contracts (positive class = vulnerable). ``Self-contr.'' is the share of outputs whose first JSON object states \texttt{vulnerable: true} with class \texttt{none}; ``Multi-obj.'' counts outputs containing more than one verdict object. Class accuracy is exact-match on the 11-way label (10 DASP classes + \texttt{none}).}\label{tab:local_agg}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrrrr}\toprule
+Model & Quant. & Parse fail & Self-contr. & Multi-obj. & Acc. & F1 & Recall & Spec. & Class acc. (vuln.) & 11-way acc.\\\midrule
+Qwen2.5-Coder-0.5B & F16 & 0.000 & 0.200 & 0 & 0.817 & 0.899 & 1.000 & 0.000 & 0.133 & 0.109\\
+Qwen2.5-Coder-0.5B & F16 (repeat) & 0.000 & 0.200 & 0 & 0.817 & 0.899 & 1.000 & 0.000 & 0.133 & 0.109\\
+Qwen2.5-Coder-0.5B & Q8\_0 & 0.000 & 0.274 & 0 & 0.817 & 0.899 & 1.000 & 0.000 & 0.105 & 0.086\\
+Qwen2.5-Coder-0.5B & Q4\_K\_M & 0.000 & 0.571 & 0 & 0.817 & 0.899 & 1.000 & 0.000 & 0.042 & 0.034\\
+Llama-3.2-1B & F16 & 0.000 & 0.000 & 0 & 0.817 & 0.899 & 1.000 & 0.000 & 0.210 & 0.171\\
+Llama-3.2-1B & Q8\_0 & 0.000 & 0.000 & 1 & 0.817 & 0.899 & 1.000 & 0.000 & 0.189 & 0.154\\
+Llama-3.2-1B & Q4\_K\_M & 0.000 & 0.000 & 10 & 0.800 & 0.889 & 0.979 & 0.000 & 0.266 & 0.217\\
+Qwen3-0.6B & F16 & 0.000 & 0.006 & 0 & 0.811 & 0.896 & 0.993 & 0.000 & 0.126 & 0.103\\
+Qwen3-0.6B & Q8\_0 & 0.000 & 0.006 & 0 & 0.811 & 0.896 & 0.993 & 0.000 & 0.126 & 0.103\\
+Qwen3-0.6B & Q4\_K\_M & 0.040 & 0.000 & 0 & 0.731 & 0.844 & 0.888 & 0.031 & 0.119 & 0.103\\
+\bottomrule\end{tabular}}\end{table*}

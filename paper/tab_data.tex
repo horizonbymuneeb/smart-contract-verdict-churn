@@ -1,0 +1,18 @@
+\begin{table}[t]\centering\small
+\caption{Evaluation set (175 contracts). Vulnerable contracts carry their SmartBugs-curated DASP folder label; safe contracts are the SWC Registry \texttt{*\_fixed} samples, labelled \texttt{none}.}\label{tab:data}
+\begin{tabular}{lrl}\toprule
+Label & $n$ & Source\\\midrule
+\texttt{unchecked\_low\_level\_calls} & 52 & SmartBugs-curated\\
+\texttt{none} & 32 & SWC Registry (fixed)\\
+\texttt{reentrancy} & 31 & SmartBugs-curated\\
+\texttt{access\_control} & 18 & SmartBugs-curated\\
+\texttt{arithmetic} & 15 & SmartBugs-curated\\
+\texttt{bad\_randomness} & 8 & SmartBugs-curated\\
+\texttt{denial\_of\_service} & 6 & SmartBugs-curated\\
+\texttt{time\_manipulation} & 5 & SmartBugs-curated\\
+\texttt{front\_running} & 4 & SmartBugs-curated\\
+\texttt{other} & 3 & SmartBugs-curated\\
+\texttt{short\_addresses} & 1 & SmartBugs-curated\\
+\midrule
+Total & 175 & 143 vulnerable, 32 safe\\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,52 @@
+\documentclass[preprint,10pt,a4paper]{elsarticle}
+\usepackage{amsmath,amssymb,booktabs,graphicx,url}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{seqsplit}
+\setlength{\emergencystretch}{3em}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\usepackage[margin=2cm]{geometry}
+\journal{Zenodo}
+\biboptions{numbers,sort&compress}
+
+\begin{document}
+\begin{frontmatter}
+\title{Same Accuracy, Different Verdicts: Quantization-Induced Verdict Churn in Small LLM Smart-Contract Auditors}
+
+\author{Muneeb Anjum\corref{cor1}}
+\ead[url]{https://orcid.org/0009-0001-2042-7656}
+\cortext[cor1]{Corresponding author. ORCID: 0009-0001-2042-7656}
+\affiliation{organization={Independent Researcher}}
+
+\input{abstract}
+
+\begin{keyword}
+smart contracts \sep Solidity \sep vulnerability detection \sep large language models \sep quantization \sep GGUF \sep prediction churn \sep reproducibility
+\end{keyword}
+\end{frontmatter}
+
+\input{body}
+
+\section*{Data and code availability}\label{sec:repro}
+All contracts come from public repositories at pinned commits (SmartBugs-curated \texttt{\seqsplit{230e649123477eff332742a59a1c7cc6dc286cab}}; SWC Registry \texttt{\seqsplit{1b6227074ecd180b374e4844153afdda0332f979}}). All local models are public GGUF files; their SHA-256 hashes are listed in \ref{app:hashes}. The dataset builder, the resume-safe runners, the shared verdict parser, the analysis scripts, every raw model output (one JSON line per contract and run, including the raw text) and the table generator used for this manuscript are publicly available at \url{https://github.com/horizonbymuneeb/smart-contract-verdict-churn} (release v1, MIT licence) and archived together with this preprint on Zenodo (\url{https://doi.org/10.5281/zenodo.23241640}). The external API arm used a closed commercial aggregator whose backends cannot be pinned; its raw responses, including returned model names, finish reasons, latencies and token counts, are released with the same package, but the calls themselves cannot be guaranteed to be reproducible.
+
+\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
+During the preparation of this work the author used AI tools to assist with running experiments and drafting the manuscript. After using these tools, the author reviewed and edited the content as needed and takes full responsibility for the content of the publication.
+
+\section*{CRediT authorship contribution statement}
+\textbf{Muneeb Anjum:} Conceptualization, Methodology, Software, Investigation, Formal analysis, Data curation, Writing -- original draft, Writing -- review \& editing.
+
+\section*{Declaration of competing interest}
+The author declares no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Funding}
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{refs}
+
+\appendix
+\section{Model files}\label{app:hashes}
+\input{tab_hashes}
+\end{document}

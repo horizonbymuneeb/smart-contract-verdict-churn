@@ -1,0 +1,16 @@
+\begin{table*}[t]\centering\small
+\caption{11-way verdict flips by ground-truth label (flipped / $n$), each quantized model against its own F16 reference.}\label{tab:perclass}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrrr}\toprule
+True label & $n$ & \shortstack{Qwen2.5-Coder-0.5B\\Q8\_0} & \shortstack{Qwen2.5-Coder-0.5B\\Q4\_K\_M} & \shortstack{Llama-3.2-1B\\Q8\_0} & \shortstack{Llama-3.2-1B\\Q4\_K\_M} & \shortstack{Qwen3-0.6B\\Q8\_0} & \shortstack{Qwen3-0.6B\\Q4\_K\_M}\\\midrule
+\texttt{unchecked\_low\_level\_calls} & 52 & 13 & 30 & 3 & 25 (2 neg.) & 1 & 7 (6 neg.)\\
+\texttt{none} & 32 & 2 & 15 & 2 & 10 & 0 & 7 (1 neg.)\\
+\texttt{reentrancy} & 31 & 4 & 7 & 3 & 7 & 0 & 3 (3 neg.)\\
+\texttt{access\_control} & 18 & 4 & 11 & 0 & 2 & 0 & 1 (1 neg.)\\
+\texttt{arithmetic} & 15 & 3 & 5 & 3 & 8 & 1 & 5 (1 neg.)\\
+\texttt{bad\_randomness} & 8 & 1 & 5 & 1 & 5 (1 neg.) & 0 & 1 (1 neg.)\\
+\texttt{denial\_of\_service} & 6 & 2 & 1 & 0 & 1 & 0 & 1\\
+\texttt{time\_manipulation} & 5 & 1 & 2 & 0 & 3 & 0 & 1 (1 neg.)\\
+\texttt{front\_running} & 4 & 1 & 2 & 1 & 2 & 0 & 0\\
+\texttt{other} & 3 & 0 & 1 & 0 & 2 & 0 & 1 (1 neg.)\\
+\texttt{short\_addresses} & 1 & 1 & 1 & 0 & 0 & 0 & 1 (1 neg.)\\
+\bottomrule\end{tabular}}\end{table*}

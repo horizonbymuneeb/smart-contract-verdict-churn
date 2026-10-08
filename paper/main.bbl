@@ -1,0 +1,180 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{luu2016making}
+L.~Luu, D.-H. Chu, H.~Olickel, P.~Saxena, A.~Hobor, Making smart contracts
+  smarter, in: Proc. ACM SIGSAC Conference on Computer and Communications
+  Security (CCS), 2016, pp. 254--269.
+\newblock \href {https://doi.org/10.1145/2976749.2978309}
+  {\path{doi:10.1145/2976749.2978309}}.
+
+\bibitem{atzei2017survey}
+N.~Atzei, M.~Bartoletti, T.~Cimoli, A survey of attacks on {Ethereum} smart
+  contracts ({SoK}), in: Principles of Security and Trust (POST), Vol. 10204 of
+  LNCS, Springer, 2017, pp. 164--186.
+\newblock \href {https://doi.org/10.1007/978-3-662-54455-6_8}
+  {\path{doi:10.1007/978-3-662-54455-6_8}}.
+
+\bibitem{feist2019slither}
+J.~Feist, G.~Grieco, A.~Groce, {Slither}: A static analysis framework for smart
+  contracts, in: Proc. IEEE/ACM 2nd International Workshop on Emerging Trends
+  in Software Engineering for Blockchain (WETSEB), 2019, pp. 8--15.
+\newblock \href {https://doi.org/10.1109/WETSEB.2019.00008}
+  {\path{doi:10.1109/WETSEB.2019.00008}}.
+
+\bibitem{durieux2020empirical}
+T.~Durieux, J.~F. Ferreira, R.~Abreu, P.~Cruz, Empirical review of automated
+  analysis tools on 47,587 {Ethereum} smart contracts, in: Proc. ACM/IEEE 42nd
+  International Conference on Software Engineering (ICSE), 2020, pp. 530--541.
+\newblock \href {https://doi.org/10.1145/3377811.3380364}
+  {\path{doi:10.1145/3377811.3380364}}.
+
+\bibitem{hu2023gptlens}
+S.~Hu, T.~Huang, F.~{\.I}lhan, S.~F. Tekin, L.~Liu, Large language
+  model-powered smart contract vulnerability detection: New perspectives, in:
+  Proc. 5th IEEE International Conference on Trust, Privacy and Security in
+  Intelligent Systems, and Applications (TPS-ISA), 2023, arXiv:2310.01152.
+
+\bibitem{sun2024gptscan}
+Y.~Sun, D.~Wu, Y.~Xue, H.~Liu, H.~Wang, Z.~Xu, X.~Xie, Y.~Liu, {GPTScan}:
+  Detecting logic vulnerabilities in smart contracts by combining {GPT} with
+  program analysis, in: Proc. IEEE/ACM 46th International Conference on
+  Software Engineering (ICSE), 2024, arXiv:2308.03314.
+
+\bibitem{david2023manual}
+I.~David, L.~Zhou, K.~Qin, D.~Song, L.~Cavallaro, A.~Gervais, Do you still need
+  a manual smart contract audit?, arXiv preprint arXiv:2306.12338 (2023).
+
+\bibitem{chen2025chatgpt}
+C.~Chen, J.~Su, J.~Chen, Y.~Wang, T.~Bi, J.~Yu, Y.~Wang, X.~Lin, T.~Chen,
+  Z.~Zheng, When {ChatGPT} meets smart contract vulnerability detection: How
+  far are we?, ACM Transactions on Software Engineering and Methodology 34~(4)
+  (2025) 100, arXiv:2309.05520.
+
+\bibitem{llamacpp}
+G.~Gerganov, {ggml-org contributors}, llama.cpp: {LLM} inference in {C/C++},
+  \url{https://github.com/ggml-org/llama.cpp} (2023).
+
+\bibitem{li2024evaluating}
+S.~Li, X.~Ning, L.~Wang, T.~Liu, X.~Shi, S.~Yan, G.~Dai, H.~Yang, Y.~Wang,
+  Evaluating quantized large language models, in: Proc. 41st International
+  Conference on Machine Learning (ICML), Vol. 235 of PMLR, 2024, pp.
+  28480--28524.
+
+\bibitem{jin2024comprehensive}
+R.~Jin, J.~Du, W.~Huang, W.~Liu, J.~Luan, B.~Wang, D.~Xiong, A comprehensive
+  evaluation of quantization strategies for large language models, in: Findings
+  of the Association for Computational Linguistics: ACL 2024, 2024,
+  arXiv:2402.16775.
+
+\bibitem{hooker2019forget}
+S.~Hooker, A.~Courville, G.~Clark, Y.~Dauphin, A.~Frome, What do compressed
+  deep neural networks forget?, arXiv preprint arXiv:1911.05248 (2019).
+
+\bibitem{dutta2024accuracy}
+A.~Dutta, S.~Krishnan, N.~Kwatra, R.~Ramjee, Accuracy is not all you need, in:
+  Advances in Neural Information Processing Systems (NeurIPS), 2024.
+
+\bibitem{milanifard2016churn}
+M.~M. Fard, Q.~Cormier, K.~Canini, M.~Gupta, Launch and iterate: Reducing
+  prediction churn, in: Advances in Neural Information Processing Systems
+  (NeurIPS), 2016.
+
+\bibitem{anjum2026guardians}
+M.~Anjum, Quantized guardians: Accuracy-neutral decision churn in compressed
+  prompt-injection detectors, Zenodo preprint (2026).
+\newblock \href {https://doi.org/10.5281/zenodo.23233203}
+  {\path{doi:10.5281/zenodo.23233203}}.
+
+\bibitem{ferreira2020smartbugs}
+J.~F. Ferreira, P.~Cruz, T.~Durieux, R.~Abreu, {SmartBugs}: A framework to
+  analyze {Solidity} smart contracts, in: Proc. 35th IEEE/ACM International
+  Conference on Automated Software Engineering (ASE), Tool Demonstrations,
+  2020, pp. 1349--1352.
+\newblock \href {https://doi.org/10.1145/3324884.3415298}
+  {\path{doi:10.1145/3324884.3415298}}.
+
+\bibitem{dasp2018}
+{NCC Group}, {DASP} -- decentralized application security project top 10 of
+  2018, \url{https://dasp.co} (2018).
+
+\bibitem{swcregistry}
+{SmartContractSecurity}, Smart contract weakness classification ({SWC})
+  registry, \url{https://github.com/SmartContractSecurity/SWC-registry}, commit
+  1b6227074ecd180b374e4844153afdda0332f979 (2024).
+
+\bibitem{dettmers2022llmint8}
+T.~Dettmers, M.~Lewis, Y.~Belkada, L.~Zettlemoyer, {LLM.int8()}: 8-bit matrix
+  multiplication for transformers at scale, in: Advances in Neural Information
+  Processing Systems (NeurIPS), 2022.
+
+\bibitem{frantar2023gptq}
+E.~Frantar, S.~Ashkboos, T.~Hoefler, D.~Alistarh, {GPTQ}: Accurate
+  post-training quantization for generative pre-trained transformers, in: Proc.
+  ICLR, 2023.
+
+\bibitem{lin2024awq}
+J.~Lin, J.~Tang, H.~Tang, S.~Yang, W.-M. Chen, W.-C. Wang, G.~Xiao, X.~Dang,
+  C.~Gan, S.~Han, {AWQ}: Activation-aware weight quantization for on-device
+  {LLM} compression and acceleration, in: Proc. Machine Learning and Systems
+  (MLSys), 2024.
+
+\bibitem{hong2024decoding}
+J.~Hong, et~al., Decoding compressed trust: Scrutinizing the trustworthiness of
+  efficient {LLMs} under compression, in: Proc. ICML, 2024.
+
+\bibitem{egashira2024exploiting}
+K.~Egashira, M.~Vero, R.~Staab, J.~He, M.~Vechev, Exploiting {LLM}
+  quantization, in: Advances in Neural Information Processing Systems
+  (NeurIPS), 2024.
+
+\bibitem{ouyang2023nondeterminism}
+S.~Ouyang, J.~M. Zhang, M.~Harman, M.~Wang, An empirical study of the
+  non-determinism of {ChatGPT} in code generation, arXiv preprint
+  arXiv:2308.02828 (2023).
+
+\bibitem{atil2024nondeterminism}
+B.~Atil, S.~Aykent, A.~Chittams, L.~Fu, R.~J. Passonneau, E.~Radcliffe, G.~R.
+  Rajagopal, A.~Sloan, et~al., Non-determinism of ``deterministic'' {LLM}
+  settings, arXiv preprint arXiv:2408.04667 (2024).
+
+\bibitem{sclar2024quantifying}
+M.~Sclar, Y.~Choi, Y.~Tsvetkov, A.~Suhr, Quantifying language models'
+  sensitivity to spurious features in prompt design or: How {I} learned to
+  start worrying about prompt formatting, in: Proc. ICLR, 2024.
+
+\bibitem{smartbugscurated}
+{SmartBugs contributors}, {SmartBugs-curated}: annotated vulnerable {Solidity}
+  smart contracts, \url{https://github.com/smartbugs/smartbugs-curated}, commit
+  230e649123477eff332742a59a1c7cc6dc286cab (2024).
+
+\bibitem{hui2024qwen25coder}
+B.~Hui, J.~Yang, Z.~Cui, J.~Yang, D.~Liu, L.~Zhang, T.~Liu, J.~Zhang, et~al.,
+  {Qwen2.5-Coder} technical report, arXiv preprint arXiv:2409.12186 (2024).
+
+\bibitem{grattafiori2024llama3}
+A.~Grattafiori, A.~Dubey, et~al., The {Llama} 3 herd of models, arXiv preprint
+  arXiv:2407.21783 (2024).
+
+\bibitem{yang2025qwen3}
+A.~Yang, A.~Li, B.~Yang, B.~Zhang, et~al., {Qwen3} technical report, arXiv
+  preprint arXiv:2505.09388 (2025).
+
+\bibitem{llamacpppython}
+A.~Betlen, contributors, llama-cpp-python: {Python} bindings for llama.cpp,
+  \url{https://github.com/abetlen/llama-cpp-python}, version 0.3.36 (2023).
+
+\bibitem{wilson1927}
+E.~B. Wilson, Probable inference, the law of succession, and statistical
+  inference, Journal of the American Statistical Association 22~(158) (1927)
+  209--212.
+
+\bibitem{mcnemar1947}
+Q.~McNemar, Note on the sampling error of the difference between correlated
+  proportions or percentages, Psychometrika 12~(2) (1947) 153--157.
+
+\end{thebibliography}

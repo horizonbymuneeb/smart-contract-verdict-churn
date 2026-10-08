@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\scriptsize
+\caption{External API arm: paired churn. (A) Same model name served by two providers. (B$_\mathrm{cache}$) Identical repeated request; the router returned cached responses, so these zeros carry no information about determinism. (B$_\mathrm{ws}$) Two uncached runs whose prompts differ by one trailing whitespace character (\texttt{ws1} = ``\textbackslash n'', \texttt{ws2} = `` \textbackslash n''); an upper bound on run-to-run churn. Flips are counted on contracts parsed in both runs; parse-status flips are contracts parsed in one run only. McNemar $b/c$ = first run correct \& second wrong / the reverse.}\label{tab:api_churn}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrr}\toprule
+Type & Pair & Both parsed & Parse-status flips & Binary flips (\%) & 11-way flips (\%) & Text differs & $b/c$ & $p$\\\midrule
+A & claude-opus-4.6: cap vs agy & 172 & 0 & 14 (8.1) & 31 (18.0) & 31 & 12/2 & 0.013\\
+B$_\mathrm{cache}$ & agy/claude-sonnet-4-6 r1 vs r2 & 175 & 0 & 0 (0.0) & 0 (0.0) & 0 & 0/0 & 1.000\\
+B$_\mathrm{cache}$ & agy/claude-opus-4-6-thinking r1 vs r2 & 175 & 0 & 0 (0.0) & 0 (0.0) & 0 & 0/0 & 1.000\\
+B$_\mathrm{cache}$ & opencode-go/deepseek-v4.1-flash r1 vs r2 & 117 & 0 & 0 (0.0) & 0 (0.0) & 0 & 0/0 & 1.000\\
+B$_\mathrm{cache}$ & cap/qwen3.8-27b r1 vs r2 & 175 & 0 & 0 (0.0) & 0 (0.0) & 0 & 0/0 & 1.000\\
+B$_\mathrm{ws}$ & agy/claude-sonnet-4-6 ws1 vs ws2 & 175 & 0 & 3 (1.7) & 9 (5.1) & 11 & 2/1 & 1.000\\
+B$_\mathrm{ws}$ & agy/claude-opus-4-6-thinking ws1 vs ws2 & 175 & 0 & 3 (1.7) & 5 (2.9) & 5 & 1/2 & 1.000\\
+B$_\mathrm{ws}$ & opencode-go/deepseek-v4.1-flash ws1 vs ws2 & 109 & 22 & 2 (1.8) & 3 (2.8) & 25 & 2/0 & 0.500\\
+B$_\mathrm{ws}$ & clp/laguna-s-2.1-free ws1 vs ws2 & 84 & 0 & 1 (1.2) & 11 (13.1) & 11 & 0/1 & 1.000\\
+\bottomrule\end{tabular}}\end{table*}

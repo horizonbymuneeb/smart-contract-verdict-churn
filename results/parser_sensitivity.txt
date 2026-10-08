@@ -1,0 +1,16 @@
+llama-3.2-1b__fp16: outputs with >1 verdict object: 0/175
+llama-3.2-1b__q4_k_m: outputs with >1 verdict object: 10/175
+llama-3.2-1b__q8_0: outputs with >1 verdict object: 1/175
+qwen2.5-coder-0.5b__fp16: outputs with >1 verdict object: 0/175
+qwen2.5-coder-0.5b__fp16_rep: outputs with >1 verdict object: 0/175
+qwen2.5-coder-0.5b__q4_k_m: outputs with >1 verdict object: 0/175
+qwen2.5-coder-0.5b__q8_0: outputs with >1 verdict object: 0/175
+qwen3-0.6b__fp16: outputs with >1 verdict object: 0/175
+qwen3-0.6b__q4_k_m: outputs with >1 verdict object: 0/175
+qwen3-0.6b__q8_0: outputs with >1 verdict object: 0/175
+llama-3.2-1b fp16->q4_k_m: binary flips last-object(shared parser)=3, first-object=0, n=175
+llama-3.2-1b fp16->q8_0: binary flips last-object(shared parser)=0, first-object=0, n=175
+qwen2.5-coder-0.5b fp16->q4_k_m: binary flips last-object(shared parser)=0, first-object=0, n=175
+qwen2.5-coder-0.5b fp16->q8_0: binary flips last-object(shared parser)=0, first-object=0, n=175
+qwen3-0.6b fp16->q4_k_m: binary flips last-object(shared parser)=16, first-object=16, n=175
+qwen3-0.6b fp16->q8_0: binary flips last-object(shared parser)=0, first-object=0, n=175
